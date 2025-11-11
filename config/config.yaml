@@ -1,0 +1,32 @@
+# Bug Bounty Toolkit Configuration
+# IMPORTANT: Only scan targets you have explicit permission to test
+
+general:
+  user_agent: "BugBountyToolkit/1.0 (Ethical Security Research)"
+  timeout: 10
+  max_retries: 3
+  
+rate_limiting:
+  requests_per_second: 2
+  burst_size: 5
+  delay_between_requests: 0.5
+  
+scanning:
+  max_threads: 5
+  subdomain_timeout: 30
+  port_scan_timeout: 5
+  
+ports:
+  common: [80, 443, 8080, 8443, 3000, 5000, 8000, 8888]
+  extended: [21, 22, 23, 25, 53, 110, 143, 443, 445, 993, 995, 1433, 3306, 3389, 5432, 5900, 8080, 8443]
+  
+compliance:
+  respect_robots_txt: true
+  check_security_txt: true
+  log_all_requests: true
+  validate_scope: true
+  
+output:
+  format: "json"
+  save_path: "./reports"
+  verbose: true

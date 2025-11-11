@@ -1,0 +1,51 @@
+# Bug Bounty Platform Rules and Guidelines
+# This file contains compliance rules for major bug bounty platforms
+
+platforms:
+  hackerone:
+    name: "HackerOne"
+    rules:
+      - "Only test in-scope assets listed in the program"
+      - "Do not perform DoS/DDoS attacks"
+      - "Do not access or modify other users' data"
+      - "Do not perform social engineering"
+      - "Respect rate limits"
+      - "Do not publicly disclose vulnerabilities before resolution"
+    
+  bugcrowd:
+    name: "Bugcrowd"
+    rules:
+      - "Test only in-scope targets"
+      - "No denial of service testing"
+      - "No social engineering"
+      - "No physical security testing"
+      - "Follow responsible disclosure"
+      - "Respect program-specific rules"
+    
+  intigriti:
+    name: "Intigriti"
+    rules:
+      - "Only test authorized targets"
+      - "No automated scanning without permission"
+      - "No DoS attacks"
+      - "No spam or social engineering"
+      - "Follow coordinated disclosure"
+    
+  yeswehack:
+    name: "YesWeHack"
+    rules:
+      - "Respect scope boundaries"
+      - "No service disruption"
+      - "No data destruction"
+      - "Follow disclosure policy"
+      - "Obtain explicit authorization"
+
+general_rules:
+  - "Always verify you have permission to test"
+  - "Stay within defined scope"
+  - "Do not exploit vulnerabilities beyond proof of concept"
+  - "Implement rate limiting to avoid service disruption"
+  - "Log all activities for accountability"
+  - "Report findings responsibly"
+  - "Do not access sensitive user data"
+  - "Stop testing if you cause unintended impact"

@@ -1,0 +1,17 @@
+.env
+.git/config
+.git/HEAD
+.aws/credentials
+.ssh/id_rsa
+config.php
+database.yml
+wp-config.php
+.htpasswd
+phpinfo.php
+backup.sql
+dump.sql
+.DS_Store
+web.config
+composer.json
+package.json
+yarn.lock
